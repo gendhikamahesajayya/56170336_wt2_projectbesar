@@ -1,0 +1,13 @@
+<div>
+  <mat-toolbar>
+    <img src="assets/logo.png" alt="Daily Star Logo" fclass="img-responsive w-100"/>
+  </mat-toolbar>
+  <mat-toolbar>
+    
+  </mat-toolbar>
+</div>
+<mat-toolbar>
+  <span><a class="nav-link" [routerLink]="['/dashboard']" routerLinkActive="active">Home</a></span>
+  <span><a class="nav-link" [routerLink]="['/about']" routerLinkActive="active">About</a></span>
+  <span><button mat-raised-button color="primary" (click)="logout()">logout</button></span>
+</mat-toolbar>

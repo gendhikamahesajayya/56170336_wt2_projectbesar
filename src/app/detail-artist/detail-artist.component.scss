@@ -1,0 +1,21 @@
+@import "../../styles.scss";
+
+.artist-image { 
+  float: left;
+  margin: 10px;
+  border-radius: 0;
+  display: table;
+}
+
+.artist-stat {
+  .category {
+    font-size: 1.2em;
+    color: wheat;
+    margin-right: 10px;
+  }
+
+  .value {
+    color: grey;
+  }
+
+}

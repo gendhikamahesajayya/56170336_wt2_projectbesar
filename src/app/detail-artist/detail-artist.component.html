@@ -1,0 +1,25 @@
+<div class="artist-detail">
+    <div class="artist-image">
+      <img width="200px" height="200px" [src]='"assets/artist/" + artist.id + ".png"' [alt]="'Picture of ' + artist.name" />
+    </div>
+    <div class="artist-stat">
+      <p style="display:none">
+        
+        <span class="category">ID</span>
+        <span class="value">{{ artist.id }}</span>
+        
+      </p>
+      <p>
+        <span class="category">Name</span>
+        <span class="value">{{ artist.name }}</span> 
+      </p>
+    </div>
+    <div style="clear:both"></div>
+    <h1>Tentang Artist</h1>
+      <p>{{ artist.description }}</p>
+      <h1>Tracking List</h1>
+      <ul>
+        <li>{{ artist.track }}</li>
+        <audio [src]='"assets/lagu/" + artist.id  + ".mp3"' controls></audio>
+      </ul>
+  </div>

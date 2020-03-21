@@ -1,0 +1,33 @@
+<div class="artist-card">
+    <mat-card>
+      <div class="container">
+      <div class="kolom1">
+      <div  class="artist-avatar">
+        <h2 style="display:none">{{ artist.id }}</h2>
+        <img [src]='"assets/artist/" + artist.id + ".png"' [alt]="'Picture of ' + artist.name" />
+      </div>
+    </div>
+  
+    <div class="kolom2">
+      <mat-icon aria-hidden="false" aria-label="Example settings_voice icon">settings_voice</mat-icon><br />
+      {{ artist.firstType}}
+      <span *ngIf="artist.secondType">/{{ artist.secondType }}</span>
+    </div>
+    </div>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Short Introduction
+          </mat-panel-title>
+          
+        </mat-expansion-panel-header>
+        <h3>
+           {{ artist.short }}<br />
+        </h3>
+      </mat-expansion-panel>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="detailClicked()">Detail</button>
+      </mat-card-actions>
+    </mat-card>
+  
+  </div>
